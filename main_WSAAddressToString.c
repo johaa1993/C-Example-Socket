@@ -52,10 +52,10 @@ int main (void)
 
   /*
   {
-    struct sockaddr_storage Destination [1];
+    struct_Zeta_Socket_Address Destination [1];
     char R [100] = {0};
     DWORD L [1];
-    WSAAddressToString ((LPSOCKADDR) Destination, sizeof (struct sockaddr_storage), NULL, R, L);
+    WSAAddressToString ((LPSOCKADDR) Destination, sizeof (struct_Zeta_Socket_Address), NULL, R, L);
     printf ("R = \n%s", R);
   }
   */

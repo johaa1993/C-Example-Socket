@@ -37,16 +37,16 @@ extern int
 Zeta_Sockets_Convert_Name_To_Address6 (const char * Name, struct sockaddr_in6 * Address);
 
 extern int
-Zeta_Sockets_Convert_Name_To_Address (const char * Name, struct sockaddr_storage * Address);
+Zeta_Sockets_Convert_Name_To_Address (const char * Name, struct_Zeta_Socket_Address * Address);
 
 extern Zeta_Sockets_Socket
 Zeta_Sockets_Create_Socket_IPv4_TCP ();
 
 extern int
-Zeta_Sockets_Bind (Zeta_Sockets_Socket Socket, const struct sockaddr_storage * Address);
+Zeta_Sockets_Bind (Zeta_Sockets_Socket Socket, const struct_Zeta_Socket_Address * Address);
 
 extern int
-Zeta_Sockets_Set_Port (struct sockaddr_storage * Address, Zeta_Port Port);
+Zeta_Socket_Address_Set_Port (struct_Zeta_Socket_Address * Address, Zeta_Port Port);
 
 char *
 Zeta_Sockets_Init_Info (int Info)
